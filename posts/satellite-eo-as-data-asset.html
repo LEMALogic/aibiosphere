@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark light">
+<title>How satellite Earth observation data becomes a governed asset — AI Biosphere</title>
+<meta name="description" content="Earth observation satellites now produce imagery at near-numberplate resolution with near-real-time frequency. The commercial question is not how to get the data — it is how to govern it as an asset.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+  <a href="../index.html" class="site-logo" aria-label="AI Biosphere home">AI<em>&middot;</em>Biosphere</a>
+  <nav class="site-nav" aria-label="Site navigation"><a href="../index.html">Overview</a>
+<a href="../posts/biosphere-as-data-infrastructure.html" class="">Data Infrastructure</a>
+<a href="../posts/blue-carbon-data.html" class="">Blue Carbon</a>
+<a href="../posts/satellite-eo-as-data-asset.html" class="active">Satellite EO</a>
+<a href="../posts/tnfd-tcfd-data-requirements.html" class="">TNFD & TCFD</a>
+<a href="../posts/what-is-an-environmental-data-asset.html" class="">Env. Data</a></nav>
+</header>
+<main id="main-content">
+<div class="article-wrap">
+  <a class="article-back" href="../index.html">All articles</a>
+  <h1>How satellite Earth observation data becomes a governed asset</h1>
+  <p>In 2025, approximately 4,500 satellites were launched — around 11 per
+day. Commercial Earth observation (EO) providers now offer imagery at
+resolutions approaching 25 centimetres, with coverage frequency moving
+from daily to near-real-time as constellation sizes grow.</p>
+<p>The barrier to accessing satellite data has collapsed. The barrier to
+making satellite data valuable has not.</p>
+<h2 id="what-satellite-eo-data-is">What satellite EO data is</h2>
+<p>Earth observation from satellites produces several distinct data
+types, each with different applications and governance requirements:</p>
+<p><strong>Optical imagery.</strong> Photographs of the Earth’s surface
+in visible and near-infrared wavelengths. Used for land cover mapping,
+vegetation analysis, infrastructure monitoring, and change detection.
+Resolution ranges from 10 metres (ESA Sentinel-2, free) to sub-metre
+(commercial providers).</p>
+<p><strong>Synthetic Aperture Radar (SAR).</strong> Radar-based imaging
+that penetrates cloud cover and works in darkness. Used for flood extent
+mapping, subsidence monitoring, ship detection, and deformation
+analysis. ICEYE and other commercial providers offer near-daily SAR
+coverage for defined areas.</p>
+<p><strong>Multispectral and hyperspectral data.</strong> Imagery across
+multiple wavelength bands beyond visible light. Used for vegetation
+health assessment (NDVI), water quality monitoring, mineral mapping, and
+crop yield estimation.</p>
+<p><strong>Thermal and atmospheric data.</strong> Land surface
+temperature, sea surface temperature, atmospheric gas concentrations.
+Used for urban heat island analysis, marine ecosystem monitoring, carbon
+flux measurement, and wildfire risk assessment.</p>
+<p><strong>Derived intelligence products.</strong> AI-applied analysis
+of raw imagery that produces higher-level outputs: change alerts, object
+classifications, anomaly detections. A company like Planet does not only
+sell satellite images — it sells change detection at scale.</p>
+<h2 id="the-free-data-opportunity">The free data opportunity</h2>
+<p>A significant and under-used resource: the European Space Agency’s
+Copernicus programme provides free access to Sentinel-2 optical imagery
+(10-metre resolution, 5-day revisit at mid-latitudes), Sentinel-1 SAR
+data, and a range of derived products through the Copernicus Open Access
+Hub.</p>
+<p>Landsat data from USGS provides a free archive going back to 1972 —
+the longest continuous Earth observation record available. For
+organisations wanting to document how a landscape, coastline, or habitat
+has changed over decades, the Landsat archive is the starting point.</p>
+<p>For many environmental monitoring applications — vegetation change,
+coastal erosion, land use conversion, urban expansion — the free
+Sentinel and Landsat archives provide sufficient resolution and
+coverage. The commercial satellite providers add value for applications
+requiring sub-metre resolution, near-real-time frequency, or specialist
+sensor types.</p>
+<h2 id="why-eo-data-is-not-automatically-an-asset">Why EO data is not
+automatically an asset</h2>
+<p>Access to satellite data is easy. Turning satellite data into a
+governed asset requires:</p>
+<p><strong>Provenance documentation.</strong> Which satellite acquired
+this imagery? On which date? With which sensor settings? Processed by
+which algorithm? Any derived product must maintain a chain of provenance
+back to the source acquisition — otherwise the data cannot be validated
+by a third party.</p>
+<p><strong>Methodology documentation.</strong> An NDVI map derived from
+Sentinel-2 imagery means different things depending on how cloud masking
+was applied, which bands were used, and what quality flags were set.
+Without documented methodology, two analysts looking at the same
+underlying imagery can produce different results — and neither can be
+validated.</p>
+<p><strong>Quality assessment.</strong> EO data has known quality
+characteristics: cloud cover, atmospheric correction accuracy, geometric
+registration quality. A data asset record for an EO-derived product
+should document the quality of the underlying data and the confidence
+bounds on derived outputs.</p>
+<p><strong>Rights documentation.</strong> The terms under which data can
+be used vary by provider. Sentinel and Landsat data is open under
+permissive licences. Commercial EO data carries licensing terms that
+restrict onward distribution and sublicensing. A governed EO data asset
+includes documentation of the rights applicable to it — what the holder
+can do with it, and under what terms.</p>
+<p><strong>Update and maintenance records.</strong> An EO-derived
+dataset is not static. Coastlines change, vegetation changes, urban
+areas expand. A governed EO data asset includes a maintenance record:
+when was it last updated, what is its currency, and what is the plan for
+ongoing refresh.</p>
+<h2 id="the-value-stack">The value stack</h2>
+<p>EO data follows a well-established value chain:</p>
+<ol type="1">
+<li><strong>Raw imagery</strong> — lowest value, available from multiple
+providers including free sources</li>
+<li><strong>Processed imagery</strong> — atmospherically corrected,
+geometrically registered, cloud-masked — modest value added</li>
+<li><strong>Derived data products</strong> — NDVI, land cover
+classifications, change detection maps — significant value added</li>
+<li><strong>AI-applied intelligence</strong> — alerts, anomaly
+detection, predictions — highest value</li>
+<li><strong>Governed data assets</strong> — any of the above levels,
+with documented provenance, methodology, quality, and rights —
+commercially licensable</li>
+</ol>
+<p>The governance layer is what separates a data product from a data
+asset. It is the layer that allows the data to be licensed, to underpin
+a nature finance claim, to support a regulatory submission, or to
+attract investment.</p>
+<h2 id="applications-for-environmental-data-governance">Applications for
+environmental data governance</h2>
+<p>For organisations managing environmental data — whether as a
+Biosphere Reserve, a conservation organisation, a government agency, or
+a corporate reporting against TNFD — governed EO data assets
+provide:</p>
+<ul>
+<li>A time-series record of environmental conditions that is verifiable
+and traceable</li>
+<li>A nature recovery evidence base that can support funding
+applications and public reporting</li>
+<li>A blue carbon evidence layer that can underpin carbon credit
+applications</li>
+<li>An ESG data source that can support sustainability reporting with
+third-party-verifiable data</li>
+<li>A spatial intelligence layer for the kind of digital twin
+infrastructure described in the UNESCO Biosphere Blueprint 2036</li>
+</ul>
+<p><a href="biosphere-as-data-infrastructure.md">Learn about the
+Biosphere as data infrastructure →</a></p>
+</div></main>
+<footer>
+  <span class="footer-brand">AI<em>&middot;</em>Biosphere</span>
+  <span>Environmental data as a governed asset</span>
+</footer>
+</body>
+</html>
